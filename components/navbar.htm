@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <Item rel="stylesheet" href="../global.css">
+        <style>
+            .navbar {
+                background: black;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .navbar a {
+                font-size: 16px;
+                padding: 14px 16px;
+                color: white;
+                text-decoration: none;
+            }
+
+            .navbar a:hover {
+                background: red;
+            }
+
+            .navbar * {
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="./plugins/include.js"></script>
+
+        <div class="navbar" slot="links"></div>
+
+        <script>includeHTML()</script>
+        <script src="./plugins/router.js"></script>
+        <script src="../global.js"></script>
+    </body>
+</html>

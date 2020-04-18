@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .navbar {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                width: 100vw;
+            }
+            
+            .navbar a {
+                text-decoration: none;
+                color: #fff;
+                padding: 1vh 3vw;
+                height: 100%;
+                cursor: pointer;
+            }
+            
+            .navbar a:hover {
+                background: #fff;
+                color: black;
+                transition: 0.2s;
+            
+            }
+            
+            .navbar a:active {
+                background: white;
+                color: black;
+            }
+            
+            
+            .navbar a.selected {
+                background: white;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+
+    <div class="navbar">
+        <a class="selected" id="home" href="index.html">Home</a>
+
+        <div class="ddm_container">
+            <a class="dropbtn"> Courses</a>
+            
+            <div id="courses_ddm" class="drop_down_menu">
+                <a href="https://www.youtube.com/playlist?list=PLLALQuK1NDriznzxP5rQkQwKIrGSWRMZF">Very Beginner</a>
+                <a href="https://www.youtube.com/watch?v=NAIQyoPcjNM">Beginner</a>
+                <a href="">Average</a>
+                <a href="">Professional</a>
+            </div>
+        </div>
+
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a onclick="toggle_translate()">Lang</a>
+    </div>
+    
+    <script src="navbar.js"></script>
+    
+    </body>
+</html>

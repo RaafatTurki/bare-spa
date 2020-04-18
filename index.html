@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PotatoJS</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="shortcut icon" href="./assets/potato.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <script src="./plugins/include.js"></script>
+
+    
+    <div include="@navbar">
+        <a onclick="goTo('/home')">Home</a>
+        <a onclick="goTo('/about')">About</a>
+        <div include="@dropdown">
+            <a>Item 1</a>
+            <a>Item 2</a>
+        </div>
+        <div include="@btn"></div>
+    </div>
+    
+    <div router-view></div>
+    
+    <script>includeHTML()</script>
+    <script src="./plugins/router.js"></script>
+    <script src="global.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("main.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.w100 {
+    width: 100%;
+}
+
+
+
+
+/* DropDownMenu */
+.drop_down_menu {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    overflow: hidden;
+    transition: 0.5s;
+
+    position: absolute;
+    
+    margin-top: 5vh;
+
+    /* top: 5vh; */
+}
+
+.drop_down_menu a {
+    text-decoration: none;
+    color: #e0e0e0;
+    padding: 2vh;
+    color: black;
+}
+
+.drop_down_menu a:hover {
+    background: black;
+    color: #e0e0e0;
+    transition: 0.1s;
+}
+
+.ddm_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.ddm_container:hover .drop_down_menu {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    overflow: hidden;
+    transition: 0.5s;
+
+    position: absolute;
+    
+    margin-top: 5vh;
+    
+}
+
+
+
+/* Content */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 3vw;
+}
+
+.container * {
+    margin: 2vh 1vw;
+}
+
+
+
+
+/* Components */
+.title {
+    font-size: 9vh;
+    color: white;
+    margin-left: 8vh;
+}
+
+.para {
+    font-size: 3vh;
+    color: white;
+}
+
+.btn {
+    text-decoration: none;
+    color: rgb(179, 177, 177);
+    background: purple;
+    padding: 1vh 2vh;
+    border-radius: 2px;
+    border: 1px solid black;
+    padding: 1vw 4vh;
+}
+
+.btn:hover {
+    text-decoration: none; 
+    color: white;
+    background: rgb(160, 1, 160);
+    transition: 0.3s;
+    
+}
+
+.weekday {
+    font-size: 3vh;
+    color: white;
+    display: flex;
+
+}
+
+
+
+.icon {
+    display: flex;
+    font-size: 3vh;
+    color: white;
+}
+
+.icon i {
+    font-size: 5vh;
+}
+
+/* @media (max-width: 375px) {
+    body {
+
+    }
+} */
+
+
